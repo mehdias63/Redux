@@ -1,19 +1,13 @@
-import { Provider } from "react-redux";
-import "./App.css";
-import store from "./redux/store";
-import CakeContainer from "./components/CakeContainer";
-import MilkContainer from "./components/MilkContainer";
-import UsersList from "./components/UsersList";
-
+import { Provider } from 'react-redux'
+import './App.css'
+import store from './redux/store'
+import CakeContainer from './components/CakeContainer'
 function App() {
-  return (
-    <Provider store={store}>
-      <CakeContainer />
-      <MilkContainer />
-      <hr />
-      <UsersList />
-    </Provider>
-  );
+	return (
+		<Provider store={store}>
+			<CakeContainer />
+		</Provider>
+	)
 }
 
-export default App;
+export default App
