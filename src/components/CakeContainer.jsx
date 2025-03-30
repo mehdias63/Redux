@@ -1,11 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux'
 import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { buyCake } from '../redux/cake/cakeActions'
 
 function CakeContainer() {
 	const [value, setValue] = useState(0)
-
-	const state = useSelector(state => state)
+	const state = useSelector(state => state.cake)
 	const dispatch = useDispatch()
 
 	return (
@@ -22,5 +21,4 @@ function CakeContainer() {
 		</div>
 	)
 }
-
 export default CakeContainer
